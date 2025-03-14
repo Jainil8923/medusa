@@ -962,6 +962,10 @@ export type InputConfig = Partial<
   }
 >
 
+export type DefineConfigOptions = {
+  isProduction?: boolean
+}
+
 type PluginAdminDetails = {
   type: "local" | "package"
   resolve: string
