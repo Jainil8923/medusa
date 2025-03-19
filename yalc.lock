@@ -1,0 +1,25 @@
+{
+  "version": "v1",
+  "packages": {
+    "@medusajs/product": {
+      "signature": "b06bb68298e37e864edc6b789740f6b7",
+      "file": true
+    },
+    "@medusajs/admin-sdk": {
+      "signature": "e4c661a2dfa3d55523af7f686bf7df83",
+      "file": true
+    },
+    "@medusajs/cli": {
+      "signature": "5e9f92dca63f7055e0479450f574e0f9",
+      "file": true
+    },
+    "@medusajs/framework": {
+      "signature": "2337c859d94fc77dc6255163aa579c63",
+      "file": true
+    },
+    "@medusajs/medusa": {
+      "signature": "058b96e1857e635e91a657fc4a83be48",
+      "file": true
+    }
+  }
+}

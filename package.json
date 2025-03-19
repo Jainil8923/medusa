@@ -75,6 +75,11 @@
   "dependencies": {
     "@changesets/changelog-github": "^0.4.8",
     "@changesets/cli": "^2.26.0",
+    "@medusajs/admin-sdk": "file:.yalc/@medusajs/admin-sdk",
+    "@medusajs/cli": "file:.yalc/@medusajs/cli",
+    "@medusajs/framework": "file:.yalc/@medusajs/framework",
+    "@medusajs/medusa": "file:.yalc/@medusajs/medusa",
+    "@medusajs/product": "file:.yalc/@medusajs/product",
     "global": "^4.4.0",
     "import-from": "^3.0.0"
   },

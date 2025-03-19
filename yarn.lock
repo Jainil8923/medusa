@@ -5283,6 +5283,16 @@ __metadata:
   languageName: unknown
   linkType: soft
 
+"@medusajs/admin-sdk@file:.yalc/@medusajs/admin-sdk::locator=root%40workspace%3A.":
+  version: 2.6.1
+  resolution: "@medusajs/admin-sdk@file:.yalc/@medusajs/admin-sdk#.yalc/@medusajs/admin-sdk::hash=670e03&locator=root%40workspace%3A."
+  dependencies:
+    "@medusajs/admin-shared": 2.6.1
+    zod: 3.22.4
+  checksum: fdbc89688a797d1aaeff7da02fd225e77846afad7ffeeebf89c3ac1874f1946cbb12c0868bf5b8e3b5a0d129f5dcae90706a962d63ba6f2afef5519314f42bd6
+  languageName: node
+  linkType: hard
+
 "@medusajs/admin-sdk@workspace:packages/admin/admin-sdk":
   version: 0.0.0-use.local
   resolution: "@medusajs/admin-sdk@workspace:packages/admin/admin-sdk"
@@ -5531,6 +5541,47 @@ __metadata:
     medusa: cli.js
   languageName: unknown
   linkType: soft
+
+"@medusajs/cli@file:.yalc/@medusajs/cli::locator=root%40workspace%3A.":
+  version: 2.6.1
+  resolution: "@medusajs/cli@file:.yalc/@medusajs/cli#.yalc/@medusajs/cli::hash=da134e&locator=root%40workspace%3A."
+  dependencies:
+    "@medusajs/telemetry": 2.6.1
+    "@medusajs/utils": 2.6.1
+    "@types/express": ^4.17.17
+    chalk: ^4.0.0
+    configstore: 5.0.1
+    dotenv: ^16.4.5
+    execa: ^5.1.1
+    express: ^4.21.0
+    fs-exists-cached: ^1.0.0
+    fs-extra: ^10.0.0
+    glob: ^10.3.10
+    hosted-git-info: ^4.0.2
+    inquirer: ^8.0.0
+    is-valid-path: ^0.1.1
+    meant: ^1.0.3
+    ora: ^5.4.1
+    pg: ^8.11.3
+    pg-god: ^1.0.12
+    prompts: ^2.4.2
+    resolve-cwd: ^3.0.0
+    stack-trace: ^0.0.10
+    ulid: ^2.3.0
+    winston: ^3.8.2
+    yargs: ^15.3.1
+  peerDependencies:
+    "@mikro-orm/core": 6.4.3
+    "@mikro-orm/knex": 6.4.3
+    "@mikro-orm/migrations": 6.4.3
+    "@mikro-orm/postgresql": 6.4.3
+    awilix: ^8.0.1
+    pg: ^8.13.0
+  bin:
+    medusa: cli.js
+  checksum: 4bc83cd689cd27eedd549054ab3b2c6784df3fe179db8f273795eb40e17954e4af26199ff9ab497ba9a163b612da5f90ab5d0957492a68eeddcd491979b677b8
+  languageName: node
+  linkType: hard
 
 "@medusajs/core-flows@2.6.1, @medusajs/core-flows@workspace:*, @medusajs/core-flows@workspace:^, @medusajs/core-flows@workspace:packages/core/core-flows":
   version: 0.0.0-use.local
@@ -5819,6 +5870,57 @@ __metadata:
     medusa-mikro-orm: ./dist/mikro-orm-cli/bin.js
   languageName: unknown
   linkType: soft
+
+"@medusajs/framework@file:.yalc/@medusajs/framework::locator=root%40workspace%3A.":
+  version: 2.6.1
+  resolution: "@medusajs/framework@file:.yalc/@medusajs/framework#.yalc/@medusajs/framework::hash=631f15&locator=root%40workspace%3A."
+  dependencies:
+    "@jercle/yargonaut": ^1.1.5
+    "@medusajs/modules-sdk": 2.6.1
+    "@medusajs/orchestration": 2.6.1
+    "@medusajs/telemetry": 2.6.1
+    "@medusajs/types": 2.6.1
+    "@medusajs/utils": 2.6.1
+    "@medusajs/workflows-sdk": 2.6.1
+    "@opentelemetry/api": ^1.9.0
+    "@types/express": ^4.17.17
+    chokidar: ^3.4.2
+    compression: 1.7.4
+    connect-redis: 5.2.0
+    cookie-parser: ^1.4.6
+    cors: ^2.8.5
+    express: ^4.21.0
+    express-session: ^1.17.3
+    glob: 7.2.3
+    jsonwebtoken: ^9.0.2
+    lodash: 4.17.21
+    morgan: ^1.9.1
+    path-to-regexp: ^0.1.10
+    tsconfig-paths: ^4.2.0
+    zod: 3.22.4
+  peerDependencies:
+    "@medusajs/cli": 2.6.1
+    "@mikro-orm/cli": 6.4.3
+    "@mikro-orm/core": 6.4.3
+    "@mikro-orm/knex": 6.4.3
+    "@mikro-orm/migrations": 6.4.3
+    "@mikro-orm/postgresql": 6.4.3
+    awilix: ^8.0.1
+    ioredis: ^5.4.1
+    pg: ^8.13.0
+    vite: ^5.4.14
+  peerDependenciesMeta:
+    "@mikro-orm/cli":
+      optional: true
+    ioredis:
+      optional: true
+    vite:
+      optional: true
+  bin:
+    medusa-mikro-orm: ./dist/mikro-orm-cli/bin.js
+  checksum: c681a1dd3b46ebb6d97272745d5006e1fe5426331c68d89357521f1e0017d328f270489755ee83a3fc6ff03d449ddba205dbc37a5c9fa70c6b947f31419ff22f
+  languageName: node
+  linkType: hard
 
 "@medusajs/fulfillment-manual@2.6.1, @medusajs/fulfillment-manual@workspace:^, @medusajs/fulfillment-manual@workspace:packages/modules/providers/fulfillment-manual":
   version: 0.0.0-use.local
@@ -6177,6 +6279,91 @@ __metadata:
   languageName: unknown
   linkType: soft
 
+"@medusajs/medusa@file:.yalc/@medusajs/medusa::locator=root%40workspace%3A.":
+  version: 2.6.1
+  resolution: "@medusajs/medusa@file:.yalc/@medusajs/medusa#.yalc/@medusajs/medusa::hash=66b388&locator=root%40workspace%3A."
+  dependencies:
+    "@inquirer/checkbox": ^2.3.11
+    "@inquirer/input": ^2.2.9
+    "@medusajs/admin-bundler": 2.6.1
+    "@medusajs/api-key": 2.6.1
+    "@medusajs/auth": 2.6.1
+    "@medusajs/auth-emailpass": 2.6.1
+    "@medusajs/auth-github": 2.6.1
+    "@medusajs/auth-google": 2.6.1
+    "@medusajs/cache-inmemory": 2.6.1
+    "@medusajs/cache-redis": 2.6.1
+    "@medusajs/cart": 2.6.1
+    "@medusajs/core-flows": 2.6.1
+    "@medusajs/currency": 2.6.1
+    "@medusajs/customer": 2.6.1
+    "@medusajs/event-bus-local": 2.6.1
+    "@medusajs/event-bus-redis": 2.6.1
+    "@medusajs/file": 2.6.1
+    "@medusajs/file-local": 2.6.1
+    "@medusajs/file-s3": 2.6.1
+    "@medusajs/fulfillment": 2.6.1
+    "@medusajs/fulfillment-manual": 2.6.1
+    "@medusajs/index": 2.6.1
+    "@medusajs/inventory": 2.6.1
+    "@medusajs/link-modules": 2.6.1
+    "@medusajs/locking": 2.6.1
+    "@medusajs/locking-postgres": 2.6.1
+    "@medusajs/locking-redis": 2.6.1
+    "@medusajs/notification": 2.6.1
+    "@medusajs/notification-local": 2.6.1
+    "@medusajs/notification-sendgrid": 2.6.1
+    "@medusajs/order": 2.6.1
+    "@medusajs/payment": 2.6.1
+    "@medusajs/payment-stripe": 2.6.1
+    "@medusajs/pricing": 2.6.1
+    "@medusajs/product": 2.6.1
+    "@medusajs/promotion": 2.6.1
+    "@medusajs/region": 2.6.1
+    "@medusajs/sales-channel": 2.6.1
+    "@medusajs/stock-location": 2.6.1
+    "@medusajs/store": 2.6.1
+    "@medusajs/tax": 2.6.1
+    "@medusajs/telemetry": 2.6.1
+    "@medusajs/user": 2.6.1
+    "@medusajs/workflow-engine-inmemory": 2.6.1
+    "@medusajs/workflow-engine-redis": 2.6.1
+    boxen: ^5.0.1
+    chalk: ^4.0.0
+    chokidar: ^3.4.2
+    compression: ^1.7.4
+    express: ^4.21.0
+    fs-exists-cached: ^1.0.0
+    jsonwebtoken: ^9.0.2
+    lodash: ^4.17.21
+    multer: ^1.4.5-lts.1
+    node-schedule: ^2.1.1
+    qs: ^6.11.2
+    request-ip: ^3.3.0
+    slugify: ^1.6.6
+    uuid: ^9.0.0
+    zod: 3.22.4
+  peerDependencies:
+    "@medusajs/framework": 2.6.1
+    "@mikro-orm/core": 6.4.3
+    "@mikro-orm/knex": 6.4.3
+    "@mikro-orm/migrations": 6.4.3
+    "@mikro-orm/postgresql": 6.4.3
+    "@swc/core": 1.5.7
+    awilix: ^8.0.1
+    react-dom: ^18.0.0
+    yalc: 1.0.0-pre.53
+  peerDependenciesMeta:
+    "@swc/core":
+      optional: true
+    react-dom:
+      optional: true
+    yalc:
+      optional: true
+  checksum: 0f2252b66045f2b56c3b657c373483bf90ab51046f726e740ce545f5f4ababe5e83877cf64b96bd1fc081f3c1c4c785165d70806b8b063b3f344c7393977687b
+  languageName: node
+  linkType: hard
+
 "@medusajs/modules-sdk@2.6.1, @medusajs/modules-sdk@workspace:^, @medusajs/modules-sdk@workspace:packages/core/modules-sdk":
   version: 0.0.0-use.local
   resolution: "@medusajs/modules-sdk@workspace:packages/core/modules-sdk"
@@ -6417,6 +6604,19 @@ __metadata:
     awilix: ^8.0.1
   languageName: unknown
   linkType: soft
+
+"@medusajs/product@file:.yalc/@medusajs/product::locator=root%40workspace%3A.":
+  version: 2.6.1
+  resolution: "@medusajs/product@file:.yalc/@medusajs/product#.yalc/@medusajs/product::hash=7089c8&locator=root%40workspace%3A."
+  peerDependencies:
+    "@medusajs/framework": 2.6.1
+    "@mikro-orm/core": 6.4.3
+    "@mikro-orm/migrations": 6.4.3
+    "@mikro-orm/postgresql": 6.4.3
+    awilix: ^8.0.1
+  checksum: 4b4c97f4f42d97721267ecf2098bfa5dd6a76a1ff2583c3185862ae3bb41c8fc9537e9f40b573f22f64b95feebb7124c5db56f22b4b983958b3737b655cba292
+  languageName: node
+  linkType: hard
 
 "@medusajs/promotion@2.6.1, @medusajs/promotion@workspace:^, @medusajs/promotion@workspace:packages/modules/promotion":
   version: 0.0.0-use.local
@@ -30056,6 +30256,11 @@ __metadata:
   dependencies:
     "@changesets/changelog-github": ^0.4.8
     "@changesets/cli": ^2.26.0
+    "@medusajs/admin-sdk": "file:.yalc/@medusajs/admin-sdk"
+    "@medusajs/cli": "file:.yalc/@medusajs/cli"
+    "@medusajs/framework": "file:.yalc/@medusajs/framework"
+    "@medusajs/medusa": "file:.yalc/@medusajs/medusa"
+    "@medusajs/product": "file:.yalc/@medusajs/product"
     "@typescript-eslint/eslint-plugin": ^6.19.0
     "@typescript-eslint/parser": ^6.19.0
     axios: ^0.21.4
